@@ -4,7 +4,7 @@
  * rate limit — on its own.
  */
 
-import type { ReadOutcome, StreamOutcome } from "../server/index.js";
+import type { ReadOutcome, StreamOutcome } from "../server/index.ts";
 
 /** Where `api/` is deployed (Vercel project `diggers-utils`, team cucus). */
 export const DEFAULT_BASE_URL = "https://diggers-utils.vercel.app";

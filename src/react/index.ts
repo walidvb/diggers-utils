@@ -1,4 +1,4 @@
-export { MediaEngine } from "./MediaEngine.js";
-export type { MediaEngineHandle, MediaEngineProps, Progress } from "./MediaEngine.js";
-export { usePlayerQueue } from "./usePlayerQueue.js";
-export type { PlayerQueueOptions, QueueItem } from "./usePlayerQueue.js";
+export { MediaEngine } from "./MediaEngine.tsx";
+export type { MediaEngineHandle, MediaEngineProps, Progress } from "./MediaEngine.tsx";
+export { usePlayerQueue } from "./usePlayerQueue.ts";
+export type { PlayerQueueOptions, QueueItem } from "./usePlayerQueue.ts";

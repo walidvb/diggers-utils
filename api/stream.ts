@@ -1,7 +1,7 @@
 /** `GET /api/stream?url=…&trackId=…` → a `StreamOutcome`: a fresh stream for a Bandcamp track whose stored one failed. */
 
-import { resolveBandcampStream } from "../src/server/index.js";
-import { badRequest, respond, throttle } from "./_http.js";
+import { resolveBandcampStream } from "../src/server/index.ts";
+import { badRequest, respond, throttle } from "./_http.ts";
 
 /** Short: callers come here because a stored stream just died. */
 const CACHE_SECONDS = 60 * 60;

@@ -15,7 +15,7 @@
  * the host flagged for every other app sharing it.
  */
 
-import type { BandcampTrack } from "../core/types.js";
+import type { BandcampTrack } from "../core/types.ts";
 
 export interface FetchOptions {
   /** Injected so tests never touch the network. Defaults to global fetch. */

@@ -1,3 +1,3 @@
-export { PROVIDERS, detectProvider, normalizeUrl, parseUrl } from "./providers.js";
-export type { Provider } from "./providers.js";
-export type { BandcampTrack, MediaInfo, MediaRef } from "./types.js";
+export { PROVIDERS, detectProvider, normalizeUrl, parseUrl } from "./providers.ts";
+export type { Provider } from "./providers.ts";
+export type { BandcampTrack, MediaInfo, MediaRef } from "./types.ts";

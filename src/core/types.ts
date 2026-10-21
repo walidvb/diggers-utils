@@ -1,4 +1,4 @@
-import type { Provider } from "./providers.js";
+import type { Provider } from "./providers.ts";
 
 /** One track on a Bandcamp release, as the release page describes it. */
 export interface BandcampTrack {

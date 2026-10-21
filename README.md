@@ -61,6 +61,10 @@ must compile it. In Next.js:
 const nextConfig = { transpilePackages: ["@cucu/media"] };
 ```
 
+Its imports name the real files (`./providers.ts`), so a consumer that
+type-checks it needs `"allowImportingTsExtensions": true` in its tsconfig —
+allowed alongside `noEmit`, which Next.js projects already have.
+
 ## Develop
 
 ```bash

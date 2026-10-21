@@ -12,7 +12,7 @@
 import { forwardRef, lazy, Suspense, useCallback, useEffect, useImperativeHandle, useRef, useState } from "react";
 import type ReactPlayerType from "react-player";
 import type { OnProgressProps } from "react-player/base";
-import type { MediaRef } from "../core/types.js";
+import type { MediaRef } from "../core/types.ts";
 
 // v2 renders nothing on the server and mounts its player on the client, so it
 // is loaded client-only (see `mounted` below) to keep hydration clean.

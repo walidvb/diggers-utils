@@ -1,7 +1,7 @@
 /** `GET /api/read?url=…` → a `ReadOutcome` for the pasted link. */
 
-import { readMedia } from "../src/server/index.js";
-import { badRequest, respond, throttle } from "./_http.js";
+import { readMedia } from "../src/server/index.ts";
+import { badRequest, respond, throttle } from "./_http.ts";
 
 /** Stream URLs stay playable for weeks, so a day-old tracklist is still good. */
 const CACHE_SECONDS = 24 * 60 * 60;
