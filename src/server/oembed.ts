@@ -6,7 +6,7 @@
  * outcome and the user types the fields themselves. Nothing here throws.
  */
 
-import type { Provider } from "../core/providers";
+import type { Provider } from "../core/providers.ts";
 
 export interface OembedMetadata {
   title: string;

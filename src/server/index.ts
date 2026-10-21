@@ -5,9 +5,9 @@ export {
   fetchRelease,
   parseTralbum,
   resolveBandcampStream,
-} from "./bandcamp";
-export type { FetchOptions, Release, ReleaseOutcome, StreamOutcome } from "./bandcamp";
-export { lookupOembed, splitOembed } from "./oembed";
-export type { OembedMetadata } from "./oembed";
-export { expandShortLink, readMedia } from "./read";
-export type { ReadOutcome } from "./read";
+} from "./bandcamp.ts";
+export type { FetchOptions, Release, ReleaseOutcome, StreamOutcome } from "./bandcamp.ts";
+export { lookupOembed, splitOembed } from "./oembed.ts";
+export type { OembedMetadata } from "./oembed.ts";
+export { expandShortLink, readMedia } from "./read.ts";
+export type { ReadOutcome } from "./read.ts";
