@@ -5,10 +5,10 @@ and play them back in one queue.
 
 | Entry point | What it does | Runs on |
 | --- | --- | --- |
-| `@cucu/media/core` | Provider detection (`detectProvider`), URL parsing and canonicalisation (`parseUrl`, `normalizeUrl`), shared types | anywhere |
+| `@cucu/media/core` | Provider detection (`detectProvider`), URL parsing and canonicalisation (`parseUrl`, `normalizeUrl`), shared types, and the pure play-queue transitions (`playFrom`, `enqueue`, `advance`, `previous`, …) | anywhere |
 | `@cucu/media/server` | Reading a pasted link: oEmbed for YouTube/SoundCloud, release pages and fresh stream URLs for Bandcamp (`readMedia`, `fetchRelease`, `resolveBandcampStream`) | server |
 | `@cucu/media/client` | The same `readMedia` / `resolveBandcampStream`, answered by the hosted API instead of scraping locally | anywhere |
-| `@cucu/media/react` | Headless player (`MediaEngine`, an invisible react-player) and queue/transport hook (`usePlayerQueue`) — bring your own controls | client |
+| `@cucu/media/react` | Headless player (`MediaEngine`, an invisible react-player), transport hook (`usePlayerQueue`) and play queue (`usePlayQueue`: what's on, tracks queued by hand, the rest of the source, what played before) — bring your own controls | client |
 
 Nothing here imports app code: network access (`fetch`) and Bandcamp rate
 limiting (`throttle`) are injected. Keep Bandcamp requests ≥2s apart across
@@ -47,7 +47,7 @@ each keep their own 2s spacing.
 ## Install
 
 ```bash
-pnpm add github:walidvb/diggers-utils#v0.1.1 react-player@2.16.1
+pnpm add github:walidvb/diggers-utils#v0.2.0 react-player@2.16.1
 ```
 
 `react`, `react-dom` and `react-player` are peer dependencies. react-player is
